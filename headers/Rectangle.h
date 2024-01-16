@@ -3,11 +3,12 @@
 
 
 #pragma once
-class Rectangle : GameObject
+class Rectangle : public GameObject
 {
 	sf::RectangleShape form;
 
 public:
-	Rectangle();
+	Rectangle() = default;
+	Rectangle(sf::Vector2f pos, sf::Vector2f size, sf::Color color);
 };
 

@@ -1,20 +1,20 @@
 #include "../headers/WindowManager.h"
 
-WindowManager::WindowManager()
+WindowManager::WindowManager(int width, int height, sf::String name)
 {
-	_width = 1920;
-	_height = 1080;
-	_name = "Game";
+	_width = width;
+	_height = height;
+	_name = name;
 
-	_window.create(sf::VideoMode(_width, _height), _name);
+	_window = new sf::RenderWindow(sf::VideoMode(_width, _height), _name);
 }
 
-WindowManager::WindowManager(int _width, int height, sf::String name)
+sf::RenderWindow* WindowManager::get_window()
 {
-	_window.create(sf::VideoMode(_width, _height), _name);
+	return _window;
 }
 
 void WindowManager::close_window()
 {
-	_window.close();
+	_window->close();
 }

@@ -1,9 +1,11 @@
 #include <iostream>
 #include "GameObject.h"
 
-GameObject::GameObject()
+GameObject::GameObject(sf::Vector2f pos, sf::Vector2f size, sf::Color color)
 {
-	std::cout << "appe du constructeur object" << std::endl;
+	_pos = pos;
+	_size = size;
+	_col = color;
 }
 
 void GameObject::set_position(sf::Vector2f position)

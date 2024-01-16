@@ -6,11 +6,11 @@ class WindowManager
 	int _width;
 	int _height;
 	sf::String _name;
-	sf::RenderWindow _window;
+	sf::RenderWindow* _window;
 
 public:
-	WindowManager();
 	WindowManager(int _width, int height, sf::String name);
+	sf::RenderWindow* get_window();
 	void close_window();
 };
 
