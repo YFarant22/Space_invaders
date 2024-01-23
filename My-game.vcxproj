@@ -20,19 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\Circle.cpp" />
     <ClCompile Include="src\GameManager.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
-    <ClCompile Include="src\Player.cpp" />
-    <ClCompile Include="src\Rectangle.cpp" />
+    <ClCompile Include="src\Spaceship.cpp" />
     <ClCompile Include="src\WindowManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\Circle.h" />
     <ClInclude Include="headers\GameManager.h" />
     <ClInclude Include="headers\GameObject.h" />
-    <ClInclude Include="headers\Player.h" />
-    <ClInclude Include="headers\Rectangle.h" />
+    <ClInclude Include="headers\Spaceship.h" />
     <ClInclude Include="headers\WindowManager.h" />
   </ItemGroup>
   <ItemGroup>

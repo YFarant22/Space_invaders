@@ -5,7 +5,6 @@ class WindowManager
 {
 	int _width;
 	int _height;
-	sf::String _name;
 	sf::RenderWindow* _window;
 
 public:
