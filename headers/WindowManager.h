@@ -3,6 +3,7 @@
 #pragma once
 class WindowManager
 {
+private:
 	int _width;
 	int _height;
 	sf::RenderWindow* _window;
